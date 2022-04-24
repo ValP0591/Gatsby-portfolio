@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway&family=Titillium+Web:wght@900&display=swap');
+
+
+.posts {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    margin: 1rem .5rem;
+    min-width: 15rem;
+    border-left: rgba(121, 120, 120, 0.623) solid 1em;
+    border-radius: .5em 1em 2em .5em;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 1px 1px 1px 1px grey;
+
+    a {
+        background-color: rgba(117, 117, 117, 0.027);
+        color: #000;
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 1px 1px 1px 1px grey;
+       
+
+        &:nth-child(n) {
+            background-color: #f5e993;
+          }
+    }    
+    
+    a:hover {
+        background: rgb(231 226 190);
+    }
+
+    h2{
+        margin-bottom: 0;
+    }
+}
+
+.post.dark {
+    --bg: darkslategray;
+}
+
+.post {
+    --bg: rgb(228, 240, 182);
+}
+
+h1 {
+    font-size: 5em;
+    font-family:'Titillium Web', sans-serif;
+}
+
+h3 {
+    margin-top: 2em;
+    font-family:'Titillium Web', sans-serif;
+}
+
+blockquote {
+    padding: 1em 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+}
